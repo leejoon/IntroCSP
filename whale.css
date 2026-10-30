@@ -1,0 +1,336 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #e6f7ff;
+    color: #333;
+    line-height: 1.6;
+   background-image: url("whale-surface.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+.fact-box {
+    background-color: #caf0f8;
+    border-left: 6px solid #0096c7;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.hero-image {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+    border: 4px solid #0096c7;
+    display: block;
+    margin: 0 auto;
+}
+
+.caption {
+    margin-top: 12px;
+    font-style: italic;
+    color: #555;
+    font-size: 1rem;
+}
+
+.hero-image:hover {
+    transform: translateY(-2px);
+    transition: 0.3s ease;
+}
+.breach-section {
+    background-color: white;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.breach-section h2 {
+    color: #0077b6;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.breach-image {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 12px;
+    border: 4px solid #0096c7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.breach-image:hover {
+    transform: scale(1.02);
+}
+
+.breach-caption {
+    margin-top: 15px;
+    color: #555;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.breach-section {
+    background-color: white;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.breach-section h2 {
+    color: #0077b6;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.breach-image {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 12px;
+    border: 4px solid #0096c7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.breach-image:hover {
+    transform: scale(1.02);
+}
+
+.breach-caption {
+    margin-top: 15px;
+    color: #555;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.breach-section {
+    background-color: white;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.breach-section h2 {
+    color: #0077b6;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.breach-image {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 12px;
+    border: 4px solid #0096c7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.breach-image:hover {
+    transform: scale(1.02);
+}
+
+.breach-caption {
+    margin-top: 15px;
+    color: #555;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.breach-section {
+    background-color: white;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.breach-section h2 {
+    color: #0077b6;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.breach-image {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 12px;
+    border: 4px solid #0096c7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.breach-image:hover {
+    transform: scale(1.02);
+}
+
+.breach-caption {
+    margin-top: 15px;
+    color: #555;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.breach-section {
+    background-color: white;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.breach-section h2 {
+    color: #0077b6;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.breach-image {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 12px;
+    border: 4px solid #0096c7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.breach-image:hover {
+    transform: scale(1.02);
+}
+
+.breach-caption {
+    margin-top: 15px;
+    color: #555;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.breach-section {
+    background-color: white;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.breach-section h2 {
+    color: #0077b6;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.breach-image {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 12px;
+    border: 4px solid #0096c7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.breach-image:hover {
+    transform: scale(1.02);
+}
+
+.breach-caption {
+    margin-top: 15px;
+    color: #555;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.breach-section {
+    background-color: white;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.breach-section h2 {
+    color: #0077b6;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.breach-image {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 12px;
+    border: 4px solid #0096c7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.breach-image:hover {
+    transform: scale(1.02);
+}
+
+.breach-caption {
+    margin-top: 15px;
+    color: #555;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.6;
+}
