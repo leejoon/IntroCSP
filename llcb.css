@@ -1,0 +1,118 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+    color: #ffffff;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #d9d9d9,
+        #a0a0a0,
+        #4d4d4d,
+        #000000
+    );
+
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid silver;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 8px black;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+/* Cat Cards */
+.cat-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    margin: 30px 0;
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 3px solid silver;
+    border-radius: 15px;
+
+    box-shadow: 0 0 20px rgba(255,255,255,0.25);
+}
+
+.cat-card img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+
+    border: 5px solid white;
+    border-radius: 12px;
+
+    box-shadow: 0 0 15px black;
+}
+
+.cat-info {
+    flex: 1;
+}
+
+.cat-info h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+
+    text-shadow: 2px 2px 5px black;
+}
+
+.cat-info p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+
+    border-top: 3px solid silver;
+    background: rgba(0, 0, 0, 0.5);
+
+    font-size: 1rem;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    .cat-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cat-card img {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+}
