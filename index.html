@@ -205,8 +205,7 @@
 const SITE_CREDIT = "Computer Science, Your School Name";
 
 const COURSES = [
-  "CS Principles",
-  "AI in Our World"
+  "CS Principles"
 ];
 
 const PROJECTS = [
@@ -219,9 +218,9 @@ const PROJECTS = [
     preview: false
   },
   {
-    title: "Example: AI in My Day",
+    title: "Example: Class Photo Gallery",
     student: "Student B.",
-    course: "AI in Our World",
+    course: "CS Principles",
     description: "Delete this line and add a real student page.",
     url: "students/example-b/index.html",
     preview: false
@@ -313,6 +312,7 @@ function render() {
 }
 
 function buildFilters() {
+  if (COURSES.length < 2) { filtersEl.hidden = true; return; }
   ["All", ...COURSES].forEach(name => {
     const b = el("button", { type: "button", "aria-pressed": name === active ? "true" : "false", text: name });
     b.addEventListener("click", () => {
