@@ -1,0 +1,67 @@
+h1{
+  text-align:center;
+color:white;
+  background-color:skyblue;
+  border-style:solid;
+  border-color:aliceblue;
+  font-size:28px;
+}
+
+.rachel{
+  width:255px;
+  display:block;
+  margin:0 auto;
+  border-style:solid;
+  border-color:steelblue;
+  
+}
+
+h5{
+  color:#679267;
+  text-decoration:italic;
+text-align: center;
+  text-decoration:underline;
+
+}
+
+.quote{
+  text-decoration:underline;
+  text-align: center;
+}
+
+h3{
+  Text-align:center;
+  color:#7bb661;
+
+}
+
+p{
+  text-align: center;
+  color:#556b2f;
+}
+
+.silent{
+  height:300px;
+   display:block;
+  margin:0 auto;
+}
+
+body{
+  background-color:#d0f0c0
+}
+
+.carson{
+  height:200px;
+  display:block;
+  margin: 0 auto;
+  border-style:solid;
+  border-color:forestgreen;
+}
+
+.child{
+  height:200px;
+  border-style: solid;
+  border-color: forestgreen;
+margin:0 auto;
+  display:block;
+}
