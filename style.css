@@ -1,0 +1,443 @@
+/* Color Palette: Deep Charcoal / Black, Pure White, and Rich Gold */
+:root {
+    --bg-color: #0b0c10;
+    --card-bg: #151821;
+    --text-color: #f8f9fa;
+    --text-muted: #adb5bd;
+    --gold: #d4af37;
+    --gold-light: #f3e5ab;
+    --gold-dark: #aa7c11;
+    --border-gold: rgba(212, 175, 55, 0.15);
+    --gold-glow: rgba(212, 175, 55, 0.4);
+}
+
+/* Cinematic Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050507;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gold-dark);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gold);
+    box-shadow: 0 0 10px var(--gold);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth Velvet Backdrop & Deep Cinematic Lighting */
+body {
+    background-color: var(--bg-color);
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(212, 175, 55, 0.04) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(212, 175, 55, 0.03) 0px, transparent 50%),
+        linear-gradient(135deg, #0b0c10 0%, #050507 100%);
+    background-attachment: fixed;
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .badge {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+}
+
+/* Custom Keyframe Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 15px rgba(212, 175, 55, 0.15); }
+    50% { box-shadow: 0 0 25px rgba(212, 175, 55, 0.4); }
+    100% { box-shadow: 0 0 15px rgba(212, 175, 55, 0.15); }
+}
+
+@keyframes fireFlicker {
+    0% { transform: skewX(-0.5deg) scale(1); opacity: 0.98; }
+    50% { transform: skewX(0.5deg) scale(1.005); opacity: 1; }
+    100% { transform: skewX(-0.3deg) scale(0.995); opacity: 0.97; }
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(11, 12, 16, 0.9), rgba(11, 12, 16, 0.97)), 
+                radial-gradient(circle at center, rgba(212, 175, 55, 0.2) 0%, transparent 65%);
+    border-bottom: 2px solid var(--gold);
+    text-align: center;
+    padding: 6rem 1.5rem;
+    animation: fadeInDown 1.2s ease-out;
+}
+
+.badge {
+    display: inline-block;
+    color: var(--gold-light);
+    font-size: 0.85rem;
+    border: 1px solid var(--gold);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+
+.badge:hover {
+    background-color: var(--gold);
+    color: var(--bg-color);
+    box-shadow: 0 0 20px var(--gold);
+    transform: scale(1.05);
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 6vw, 3.8rem);
+    color: #fff;
+    margin-bottom: 1rem;
+    text-shadow: 
+        0 0 4px #fff, 
+        0 -5px 4px var(--gold-light), 
+        2px -10px 8px var(--gold), 
+        -2px -15px 14px var(--gold-dark), 
+        2px -22px 20px #ff4500;
+    animation: fireFlicker 2s infinite alternate ease-in-out;
+}
+
+.hero p {
+    color: var(--text-muted);
+    font-size: 1.15rem;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+/* Main Layout Setup */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+.section {
+    margin-bottom: 5rem;
+}
+
+.section h2 {
+    color: var(--gold);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-gold);
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.section-desc {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.section:hover h2::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--gold);
+    box-shadow: 0 0 10px var(--gold);
+    transition: width 0.5s ease;
+}
+
+/* Base Component Styling with Glass Glare Sweeps & Industrial Corners */
+.card, .char-card, .fact-item, .gallery-item {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--card-bg);
+    border-radius: 6px;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                border-color 0.4s ease, 
+                box-shadow 0.4s ease;
+}
+
+.card::after, .char-card::after, .fact-item::after, .gallery-item::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -70%;
+    width: 30%;
+    height: 200%;
+    background: linear-gradient(
+        to right, 
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(255, 255, 255, 0.12) 50%, 
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(25deg);
+    transition: left 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 2;
+}
+
+.card:hover::after, .char-card:hover::after, .fact-item:hover::after, .gallery-item:hover::after {
+    left: 130%;
+}
+
+.card::before, .char-card::before, .fact-item::before, .gallery-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid var(--gold);
+    border-left: 2px solid var(--gold);
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+    z-index: 3;
+}
+
+.card:hover::before, .char-card:hover::before, .fact-item:hover::before, .gallery-item:hover::before {
+    opacity: 1;
+}
+
+/* NEW: Media Gallery Styling Grid */
+.media-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    border: 1px solid var(--border-gold);
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item:hover {
+    transform: translateY(-6px);
+    border-color: var(--gold);
+    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.15);
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    /* Forces the image to scale down cleanly without stretching or squeezing */
+    object-fit: cover; 
+    /* Ensures the focus of the image stays perfectly centered in the frame */
+    object-position: center; 
+    /* Cinematic gold tint effect */
+    filter: sepia(0.6) contrast(1.1) brightness(0.85);
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+
+/* Clear the tint and magnify image slightly when user hovers */
+.gallery-item:hover .image-wrapper img {
+    filter: sepia(0) contrast(1) brightness(1);
+    transform: scale(1.05);
+}
+
+.gallery-meta {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-grow: 1;
+}
+
+.gallery-meta h3 {
+    color: #fff;
+    font-size: 1.15rem;
+}
+
+.gallery-meta p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.credit {
+    font-size: 0.75rem;
+    color: var(--gold-dark);
+    margin-top: auto;
+    border-top: 1px dashed rgba(212, 175, 55, 0.2);
+    padding-top: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+/* Timeline / Dates Grid */
+.timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    border: 1px solid var(--border-gold);
+    padding: 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.15);
+}
+
+.card .date {
+    display: block;
+    color: var(--gold-light);
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.card:hover h3 {
+    color: var(--gold-light);
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.highlight-date {
+    border: 2px solid var(--gold);
+    animation: pulseGlow 3s infinite ease-in-out;
+}
+
+.highlight-date:hover {
+    animation-play-state: paused;
+    box-shadow: 0 12px 25px rgba(212, 175, 55, 0.4);
+}
+
+/* Character Grid */
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.char-card {
+    border: 1px solid var(--border-gold);
+    border-left: 4px solid var(--gold);
+    padding: 1.5rem;
+}
+
+.char-card:hover {
+    transform: translateX(6px) translateY(-2px);
+    border-left-color: var(--gold-light);
+    border-top-color: var(--gold);
+    border-right-color: var(--gold);
+    border-bottom-color: var(--gold);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.12);
+}
+
+.char-card h3 {
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.char-sub {
+    display: block;
+    color: var(--gold);
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+}
+
+.char-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Fun Facts Section */
+.facts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.fact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    border: 1px solid var(--border-gold);
+    padding: 1.5rem;
+}
+
+.fact-item:hover {
+    border-color: rgba(212, 175, 55, 0.4);
+    background-color: #191c27;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.fact-num {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.4s ease;
+}
+
+.fact-item:hover .fact-num {
+    transform: scale(1.25) rotate(-8deg);
+    color: var(--gold-light);
+}
+
+.fact-item h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.35rem;
+}
+
+.fact-item p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-top: 1px solid var(--border-gold);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    background: #06070a;
+}
