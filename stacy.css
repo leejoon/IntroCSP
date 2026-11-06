@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f9ff;
+    color: #333;
+    line-height: 1.6;
+  background-color: rgba(0,0,0,0.50)
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* The general header styles are now more specific for the background image */
+header.hero {
+    background-image: url('stacysnails.webp'); /* This will now show up */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    min-height: 500px; /* Added from .hero to ensure consistent height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  border: ridge;
+  border-color:black;
+}
+
+header.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+  color:#305069;
+  font-family:Baskerville;
+}
+
+header.hero p {
+    font-size: 1.2rem;
+}
+
+nav {
+    background-color: #5ab9ea;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    /* This now only applies to the second hero section (the one that uses nailsalon.jpg) */
+    background-image: url("images/nailsalon.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.hero h2 {
+    color: #2c7da0;
+    margin-bottom: 15px;
+}
+
+.card {
+    background-color: white;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #2c7da0;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style-position: inside;
+}
+
+footer {
+    background-color: #7996a4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+p {
+  color:#305069;
+  font-family:Baskerville;
+}
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #5ab9ea, #87ceeb);
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(90, 185, 234, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #4aa8d8, #6fc9ef);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(90, 185, 234, 0.5);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+h2 {
+  font-family:Baskerville;
+}
+li {
+  font-family:Baskerville;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.30); /* This is the transparent overlay */
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
