@@ -1,0 +1,146 @@
+/* ===== GENERAL ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    background: #0b1f5b;
+    color: white;
+    line-height: 1.8;
+}
+
+/* ===== HERO SECTION ===== */
+
+.hero {
+    background: linear-gradient(rgba(220,0,0,.8),
+    rgba(220,0,0,.8)),
+    url("spider-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 4px 4px 10px black;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-top: 15px;
+}
+
+/* ===== NAVIGATION ===== */
+
+nav {
+    background-color: #111;
+    text-align: center;
+    padding: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #ff3232;
+}
+
+/* ===== SECTION CARDS ===== */
+
+section {
+    width: 85%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: white;
+    color: #222;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.4);
+}
+
+/* ===== TITLES ===== */
+
+section h2 {
+    background: #d50000;
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* ===== IMAGES ===== */
+
+section img {
+    display: block;
+    margin: 20px auto;
+    width: 70%;
+    max-width: 600px;
+    border-radius: 15px;
+}
+
+/* ===== PARAGRAPHS ===== */
+
+section p {
+    padding: 0 30px;
+    margin: 18px 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background: #111;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    border-top: 4px solid #d50000;
+}
+
+/* ===== HOVER EFFECT ===== */
+
+section:hover {
+    transform: translateY(-8px);
+    transition: 0.3s;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        width: 95%;
+    }
+
+    section img {
+        height: 250px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.MOM {
+    color: #6f6d6d;
+    padding: 10px;
+    text-align: center;
+}
